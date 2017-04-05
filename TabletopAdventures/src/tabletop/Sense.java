@@ -21,7 +21,7 @@ public class Sense {
 		}
 	}
 	
-	private String[] processFlags(String[] tile_flags) {
+	protected String[] processFlags(String[] tile_flags) {
 		System.out.println("ERROR: PLEASE OVERWRITE METHOD 'processFlags' WHEN EXTENDING 'Sense'");
 		return new String[0];
 	}
