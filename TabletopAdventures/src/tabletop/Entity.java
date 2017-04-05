@@ -31,6 +31,8 @@ public class Entity {
 	private Feat[] feats;
 	private String description;
 	private Gait gait;
+	private GameLevel percieved_level;
+	private int[] pos;
 	
 	public String getName() {
 		return name;
@@ -193,6 +195,15 @@ public class Entity {
 	}
 	public void setGait(Gait gait) {
 		this.gait = gait;
+	}
+	public GameLevel getPercievedLevel() {
+		return percieved_level;
+	}
+	public void setPercievedLevel(GameLevel level) {
+		this.percieved_level = level;
+	}
+	public int[] getPos() {
+		return pos;
 	}
 
 }

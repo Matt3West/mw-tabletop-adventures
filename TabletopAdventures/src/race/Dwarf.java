@@ -4,8 +4,11 @@ import java.io.IOException;
 
 import tabletop.Ability;
 import tabletop.AgeProgression;
+import tabletop.Darkvision;
 import tabletop.Dice;
 import tabletop.EntitySize;
+import tabletop.Language;
+import tabletop.Sense;
 import utils.IOHelper;
 
 public class Dwarf extends Race {
@@ -38,6 +41,14 @@ public class Dwarf extends Race {
 		
 		// Set Speed
 		setSpeed(25);
+		
+		// Set Languages
+		Language[] lang = {Language.COMMON, Language.DWARVISH};
+		setLanguages(lang);
+		
+		// Set Senses
+		Sense[] sen = {new Darkvision()};
+		setSenses(sen);
 	}
 	
 }
